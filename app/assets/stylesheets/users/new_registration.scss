@@ -44,10 +44,10 @@
         height: 70px;
         &__top{
           display: flex;
-          &__nickname{
+          &__left{
             font-size: 14px;
           }
-          &__hitu{
+          &__right{
             width: 32px;
             height: 20px;
             line-height: 20px;
@@ -76,11 +76,11 @@
         height: 102px;
         &__top{
           display: flex;
-          &__email{
+          &__left{
             font-size: 14px;
             margin-right: 8px;
           }
-          &__hitu{
+          &__right{
             width: 32px;
             height: 20px;
             line-height: 20px;
@@ -107,11 +107,11 @@
         height: 162px;
         &__top{
           display: flex;
-          &__pass{
+          &__left{
             font-size: 14px;
             margin-right: 8px;
           }
-          &__hitu{
+          &__right{
             width: 32px;
             height: 20px;
             line-height: 20px;
@@ -163,11 +163,11 @@
         height: 102px;
         &__top{
           display: flex;
-          &__name{
+          &__left{
             font-size: 14px;
             margin-right: 8px;
           }
-          &__hitu{
+          &__right{
             width: 32px;
             height: 20px;
             line-height: 20px;
@@ -206,11 +206,11 @@
         height: 102px;
         &__top{
           display: flex;
-          &__kana{
+          &__left{
             font-size: 14px;
             margin-right: 8px;
           }
-          &__hitu{
+          &__right{
             width: 32px;
             height: 20px;
             line-height: 20px;
@@ -250,11 +250,11 @@
         height: 120px;
         &__top{
           display: flex;
-          &__birth{
+          &__left{
             font-size: 14px;
             margin-right: 8px;
           }
-          &__hitu{
+          &__right{
             width: 32px;
             height: 20px;
             line-height: 20px;
