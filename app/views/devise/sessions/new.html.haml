@@ -1,6 +1,7 @@
 .header
-  = link_to "#"  do
-    = image_tag "/assets/material/logo/logo.png", class:"header__image"
+  .header__image
+    = link_to "#"  do
+      = image_tag "/assets/material/logo/logo.png", class:"header__image__icon"
 
 .main
   .main__case
@@ -11,18 +12,29 @@
         新規会員登録
     .main__case__contents
       .main__case__contents__sns
-        -# = label_tag '', '', {class: 'main__case__contents__sns__label'} do
-        = button_tag 'Facebookでログイン', class: "main__case__contents__sns__label__fcbk" do
-          = icon('fab', 'facebook-f', class: "main__case__contents__sns__label__fcbk__icon", placeholder:"ログイン")
-        = button_tag 'Googleでログイン', class:"main__case__contents__sns__ggl"
-        = image_tag "/assets/material/logo/google-icon.png"
+        = button_tag '', class: "main__case__contents__sns__fcbk" do
+          = icon('fab', 'facebook-f', class: "main__case__contents__sns__fcbk__icon")
+          = label_tag '', 'Facebookでログイン', {class: 'main__case__contents__sns__fcbk__label'}
+        = button_tag '', class:"main__case__contents__sns__ggl" do
+          = image_tag "/assets/material/logo/google-icon.png", class:"main__case__contents__sns__ggl__icon"
+          = label_tag '', 'googleでログイン', {class: 'main__case__contents__sns__ggl__label'}
       = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
         .main__case__contents__form
           = f.email_field :email, autocomplete: "email", placeholder:'メールアドレス',class:'main__case__contents__form__email'
           = f.password_field  :password, autocomplete: "new-password", class:"main__case__contents__form__pass", placeholder:'パスワード'
           .main__case__contents__form__info
-            = check_box_tag :password
-            =label_tag :password, "私はロボットではありません", {class: "main__case__contents__form__info__check"}
+            .main__case__contents__form__info__left
+              = check_box_tag '', class:'main__case__contents__form__info__left__checkbox' 
+            .main__case__contents__form__info__center
+              =label_tag '', "私はロボットではありません", {class: "main__case__contents__form__info__center__label"}
+            .main__case__contents__form__info__right
+              = image_tag "/assets/material/logo/reCAPTCHA.png", class:"main__case__contents__form__info__right__icon"
+            .main__case__contents__form__info__bottom
+              = link_to "#" do
+                プライバシー
+                -
+              = link_to "#" do
+                利用規約
           = f.submit "ログイン",class:'main__case__contents__form__login'
           = link_to "#" , class: "main__case__contents__form__passforget" do
             パスワードをお忘れの方
