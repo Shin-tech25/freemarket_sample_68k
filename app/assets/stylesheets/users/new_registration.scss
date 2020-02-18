@@ -25,7 +25,7 @@
     margin: 0 auto;
     background-color: white;
     width: 700px;
-    height: 1300px;
+    height: 1350px;
     &__header{
       border: solid 1px #f5f5f5;
       width: 701px;
@@ -53,7 +53,7 @@
             line-height: 20px;
             text-align: center;
             font-size: 12px;
-            background-color: #25e7ee;
+            background-color: #3CCACE;
             color: white;
             margin-left: 8px;
           }
@@ -86,7 +86,7 @@
             line-height: 20px;
             text-align: center;
             font-size: 12px;
-            background-color: #25e7ee;
+            background-color: #3CCACE;
             color: white;
           }
         }
@@ -99,12 +99,13 @@
           border-radius: 4px;
           border: 1px solid #ccc;
         }
+        
       }
       &__pass{
         padding-top: 32px;
         margin: 0 auto;
         width: 350px;
-        height: 162px;
+        height: 212px;
         &__top{
           display: flex;
           &__left{
@@ -117,7 +118,7 @@
             line-height: 20px;
             text-align: center;
             font-size: 12px;
-            background-color: #25e7ee;
+            background-color: #3CCACE;
             color: white;
           }
         }
@@ -127,6 +128,15 @@
           width: 350px;
           padding: 10px 16px 8px;
           color: #333333;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+        }
+        &__repeat{
+          height: 50px;
+          width: 100%;
+          margin-top: 8px;
+          color: #333333;
+          padding-left: 10px;
           border-radius: 4px;
           border: 1px solid #ccc;
         }
@@ -173,7 +183,7 @@
             line-height: 20px;
             text-align: center;
             font-size: 12px;
-            background-color: #25e7ee;
+            background-color: #3CCACE;
             color: white;
           }
         }
@@ -216,7 +226,7 @@
             line-height: 20px;
             text-align: center;
             font-size: 12px;
-            background-color: #25e7ee;
+            background-color: #3CCACE;
             color: white;
           }
         }
@@ -260,7 +270,7 @@
             line-height: 20px;
             text-align: center;
             font-size: 12px;
-            background-color: #25e7ee;
+            background-color: #3CCACE;
             color: white;
           }
         }
@@ -370,7 +380,7 @@
           height: 45px;
           font-size: 14px;
           color: #ffffff;
-          background-color: #25e7ee;
+          background-color: #3CCACE;
           line-height: 45px;
           text-align: center;
           margin-top: 32px;
